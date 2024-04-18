@@ -14,8 +14,10 @@ public class CustomerConfigTestController {
     private String p1;
     @Value("${spring.datasource.username}")
     private String p2;
+    @Value("${global.params.owner}")
+    private String p3;
     @GetMapping("/params")
     Map<String, String> getParams() {
-        return Map.of("environment name", p1, "username", p2);
+        return Map.of("environment name", p1, "username", p2, "owner", p3);
     }
 }
