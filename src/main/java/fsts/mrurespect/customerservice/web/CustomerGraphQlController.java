@@ -18,10 +18,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/graphql")
-public class AccountGraphQlController {
+public class CustomerGraphQlController {
     private final CustomerService customerService;
 
-    public AccountGraphQlController( CustomerService customerService) {
+    public CustomerGraphQlController(CustomerService customerService) {
         this.customerService = customerService;
     }
 
