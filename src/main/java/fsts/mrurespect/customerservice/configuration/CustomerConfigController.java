@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RefreshScope
-public class CustomerConfigTestController {
+public class CustomerConfigController {
     @Value("${env.name}")
     private String p1;
     @Value("${spring.datasource.username}")
